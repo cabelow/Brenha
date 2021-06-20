@@ -32,3 +32,11 @@ export class FolderPage implements OnInit {
   }
 
 }
+
+/*
+https://howlerjs.com/
+https://github.com/goldfire/howler.js#quick-start
+https://www.npmjs.com/package/howler,
+https://stackblitz.com/edit/howler-player?file=helpers%2FHowlerPlayer.ts
+https://file-examples.com/index.php/sample-audio-files/sample-mp3-download/
+*/
