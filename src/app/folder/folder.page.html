@@ -1,0 +1,66 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ folder }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">{{ folder }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <div id="container">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card class="padding20">
+              <div class="img"></div>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col size="4">
+            <ion-card>
+              <div class="item"></div>
+              <ion-card-header>
+                <ion-card-subtitle>Reza</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+
+          <ion-col size="4">
+            <ion-card>
+              <a>
+                <div class="item"></div>
+              </a>
+              <button (click)="play()">Tocar</button>
+              <button (click)="pause()">Parar</button>
+              <ion-card-header>
+                <ion-card-subtitle>Play</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+
+          <ion-col size="4">
+            <ion-card>
+              <div class="item"></div>
+              <ion-card-header>
+                <ion-card-subtitle>Sermão</ion-card-subtitle>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+
+    </div>
+  </div>
+</ion-content>
