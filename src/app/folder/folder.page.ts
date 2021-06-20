@@ -15,17 +15,25 @@ export class FolderPage implements OnInit {
     src: ['https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3']
   });
 
+  public controler = "Tocar"
+
   constructor(private activatedRoute: ActivatedRoute) { }
 
-  public play(){
-    console.log("play")
-    this.sound.play();
+  public playControler(){
+    if (this.controler ==  "Parar"){
+      this.sound.pause();
+      console.log("pause")
+      console.log("controler", this.controler)
+      this.controler =  "Tocar"
+    }
+    else if (this.controler ==  "Tocar"){
+      this.sound.play();
+      console.log("play")
+      console.log("controler", this.controler)
+      this.controler =  "Parar"
+    }
   }
 
-  public pause(){
-    console.log("pause")
-    this.sound.pause();
-  }
 
   ngOnInit() {
     this.folder = this.activatedRoute.snapshot.paramMap.get('id');
